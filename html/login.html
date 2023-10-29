@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+    <div class="containerLogin">
+        <h1>Blog GG</h1>
+        <!-- --------------------------- Đăng ký ---------------------------------- -->
+        <div class="dangKy">
+            <h1>Đăng Ký</h1>
+            <input class="DKemail" type="text" placeholder="Nhập Email của bạn">
+            <input class="DKname" type="text" placeholder="Nhập tên của bạn">
+            <input class="DKpassword" type="number" placeholder="Nhập mật khẩu của bạn">
+            <div class="btn-dky">
+                <button onclick="loginDK()">Submit</button>
+                <div>
+                    Bạn có tài khoản?
+                    <span style="cursor: pointer; color: blue;" onclick="checkLoginDN()">
+                        Đăng nhập
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!-- --------------------------- /Đăng ký/ ---------------------------------- -->
+        <!-- --------------------------- Đăng nhập ---------------------------------- -->
+        <div class="dangNhap none">
+            <h1>Đăng Nhập</h1>
+            <input class="DNname" type="text" placeholder="Nhập tên tài khoản">
+            <input class="DNpassword" type="text" placeholder="Nhập mật khẩu tài khoản">
+
+            <div class="btn-dky">
+                <button onclick="loginDN()">Submit</button>
+                <div>
+                    Bạn chưa có tài khoản?
+                    <span style="cursor: pointer; color: blue;" onclick="checkLoginDK()">
+                        Đăng ký
+                    </span>
+                </div>
+            </div>
+
+        </div>
+        <!-- --------------------------- /Đăng nhập/ ---------------------------------- -->
+    </div>
+
+
+    <script src="../js/login.js"></script>
+    <!-- <script src="../js/main.js"></script> -->
+
+</body>
+
+</html>

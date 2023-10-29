@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <ul>
+                <li onclick="openBV()">quan ly bai viet</li>
+                <li onclick="openDM()">quan ly danh muc</li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="cnt_baiViet" id="cnt_baiViet">
+                <table border="1px" style="border-collapse:collapse ;">
+                    <thead>
+                        <!-- CreatedAT: getTime1(),
+                        content: "",
+                        Img: "https://images.pexels.com/photos/17982042/pexels-photo-17982042/free-photo-of-chim-thu-v-t-chi-nhanh-nhi-t-d-i.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+                        idauthor: 0,
+                        status: 0,
+                        rating: 0,
+                        like: 0,
+                        hot: false,
+                        tilte: "bai viet thang 1",
+                        display: true,
+                        huong: true,
+                        idBV: 0,
+                        idDM: 0 -->
+                        <th>ID bai viet</th>
+                        <th>tai khoan</th>
+                        <th>ten bai viet</th>
+                        <th>noi dung bai viet</th>
+                        <td>ngay dang</td>
+                        <th>hinh anh</th>
+                        <th>trang thai</th>
+                        <th>hot</th>
+                        <th>danh muc</th>
+                        <th></th>
+
+                    </thead>
+                    <tbody class="noiDungQT">
+                        <tr>
+                            <!-- <td>1</td>
+                                <td>phong</td>
+                                <td>bai viet thang 1</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, explicabo!</td>
+                                <td>16/10/2023</td>
+                                <td>img</td>
+                                <td>dang cho</td>
+                                <td>false</td>
+                                <td>the thao</td>
+                                <td>
+                                    <button>xoa</button>
+                                    <button>sua</button>
+                                    <button>chi tiet</button>
+                                </td> -->
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="cnt_danhMuc none" id="cnt_danhMuc">
+                danh muc
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/admin.js"></script>
+</body>
+
+</html>

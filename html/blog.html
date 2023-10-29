@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/header.css">
+</head>
+
+<body>
+    <style>
+        .blogs {
+            margin: 50px 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        a {
+            display: block;
+        }
+
+        .blogT {
+            width: 30%;
+            flex-direction: row;
+            margin-bottom: 30px;
+        }
+
+        .blogT img {
+            width: 266px;
+            height: 202px;
+            border-radius: 15px;
+            object-fit: cover;
+        }
+    </style>
+    <div class="container">
+        <div class="header">
+            <div class="header__blog-left flex">
+                <img class="img" src="../assets/monkey 1.png">
+                <ul>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li>Contact</li>
+                        <li><a href="./new.html">Upload</a></li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="header__blog-right">
+                <input id="text_search" type="text" placeholder="Tìm kiếm Blog">
+                <button onclick="timKiem()" class="dangXuat">Tim Kiem</button>
+                <button onclick="dangXuat()" class="dangXuat">Đăng xuất</button>
+            </div>
+        </div>
+
+        <div class="blogs">
+
+            <div class="hotblog__blog">
+                <div class="blog">
+                    <img class="img"
+                        src="https://images.pexels.com/photos/17982042/pexels-photo-17982042/free-photo-of-chim-thu-v-t-chi-nhanh-nhi-t-d-i.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                        alt="">
+                    <div class="bv_content">
+                        <h4>kien thuc</h4>
+                        <h3>Hướng dẫn setup phòng cực chill dành cho người mới toàn tập</h3>
+                        <div>
+                            <span>may 23</span>
+                            <span>phong le</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <script src="../js/blog.js"></script>
+
+</body>
+
+</html>

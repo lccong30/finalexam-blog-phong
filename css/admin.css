@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 85%;
+    border: 1px solid;
+    display: flex;
+    margin: 0 auto;
+}
+
+.navbar {
+    width: 20%;
+}
+
+.navbar li {
+    width: 80%;
+    height: 30px;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    width: 80%;
+}
+
+.cnt_danhMuc.none {
+    display: none;
+}
+
+.cnt_baiViet.none {
+    display: none;
+}
+
+.img {
+    height: 200px;
+}
