@@ -1,7 +1,7 @@
 let tieuDe_np = document.querySelector(".tieuDe_np")
 let noiDung_np = document.querySelector(".noiDung_np")
 const editor = document.getElementById("editor")
-
+const web_url = "https://finalexam-blog-phong.vercel.app"
 let indexTKbEditor = JSON.parse(localStorage.getItem("indexTKb"))
 let baiVietEditor = JSON.parse(localStorage.getItem("baiviet"))
 let taiKhoanEditor = JSON.parse(localStorage.getItem("TKb"))

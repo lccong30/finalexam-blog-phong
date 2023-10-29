@@ -2,7 +2,7 @@ let baiVietdetail = JSON.parse(localStorage.getItem("baiviet")) || []
 let danhMucdetail = JSON.parse(localStorage.getItem("danhMuc")) || []
 let taiKhoandetail = JSON.parse(localStorage.getItem("TKb")) || []
 const fileURLs = JSON.parse(localStorage.getItem("fileURLs")) || []
-
+const web_url = "https://finalexam-blog-phong.vercel.app"
 function getIdBV() {
     let currentUrl = window.location.href
     let url = new URL(currentUrl)
@@ -14,7 +14,7 @@ function getIdBV() {
 function check() {
     let id = getIdBV()
     if (id === null) {
-        window.location.href = "http://127.0.0.1:5500/html/index.html"
+        window.location.href = "web_url"
     }
 }
 check()

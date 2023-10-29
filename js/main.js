@@ -5,6 +5,7 @@ function getTime1() {
     var dateTime = date;
     return dateTime
 }
+const web_url = "https://finalexam-blog-phong.vercel.app"
 
 
 //-----------------------------------khai bao bien (input,button,img...)--------------------------------//
@@ -161,7 +162,8 @@ function hienThiBV() {
                 if (baiviet[i].status === 2) {
                     let blt = document.createElement("a")
                     blt.classList.add("blogT")
-                    blt.href = `http://127.0.0.1:5500/html/detail.html?_idBV=${baiviet[i].idbv}`
+                    // blt.href = `http://127.0.0.1:5500/html/detail.html?_idBV=${baiviet[i].idbv}`
+                    blt.href = `web_url/html/detail.html?_idBV=${baiviet[i].idbv}`
 
                     let img = document.createElement("img")
                     img.classList.add("img")
@@ -197,7 +199,8 @@ function hienThiBV() {
                 } else if (baiviet[i].status === 3) {//x
                     let blog = document.createElement("a")
                     blog.classList.add("blog")
-                    blog.href = `http://127.0.0.1:5500/html/detail.html?_idBV=${baiviet[i].idbv}`
+                    blog.href = `web_url/html/detail.html?_idBV=${baiviet[i].idbv}`
+                    // blog.href = `http://127.0.0.1:5500/html/detail.html?_idBV=${baiviet[i].idbv}`
                     let img = document.createElement("img")
                     img.classList.add("img")
                     img.src = baiviet[i].banner
@@ -246,7 +249,8 @@ function hienthiBaiVietChinh() {
     for (let i = 0; i < baiviet.length; i++) {
         if (baiviet[i].status === 1 && baiviet[i].hot === true) {
             let a = document.createElement("a")
-            a.href = `http://127.0.0.1:5500/html/detail.html?_idBV=${baiviet[i].idbv}`
+            // a.href = `http://127.0.0.1:5500/html/detail.html?_idBV=${baiviet[i].idbv}`
+            a.href = `web_url/html/detail.html?_idBV=${baiviet[i].idbv}`
 
             let img = document.createElement("img")
             img.classList.add("img")
@@ -298,12 +302,13 @@ function baiVietChiTiet(baiViet) {
 let indexTKb = JSON.parse(localStorage.getItem("indexTKb"))
 let blogLogin = JSON.parse(localStorage.getItem("blogLogin"))
 if (indexTKb === -1 || blogLogin === false) {
-    window.location = "http://127.0.0.1:5500/html/login.html"
+    window.location = "web_url/html/login.html"
 }
 function dangXuat() {
     localStorage.setItem("indexTKb", JSON.stringify(-1))
     localStorage.setItem("blogLogin", JSON.stringify(false))
-    window.location = "http://127.0.0.1:5500/html/login.html"
+    // window.location = "http://127.0.0.1:5500/html/login.html"
+    window.location = "web_url/html/login.html"
 }
 //---------------------------------//Dang xuat//--------------------------------------------//
 

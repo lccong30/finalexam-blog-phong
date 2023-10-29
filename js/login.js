@@ -1,4 +1,5 @@
-let TKb = JSON.parse(localStorage.getItem("TKb"))
+let TKb = JSON.parse(localStorage.getItem("TKb")) || []
+const web_url = "https://finalexam-blog-phong.vercel.app"
 if (TKb === null) {
     localStorage.setItem("TKb", JSON.stringify([
         {
@@ -61,7 +62,7 @@ function loginDK() {
         localStorage.setItem("blogLogin", JSON.stringify(true))
         localStorage.setItem("TKb", JSON.stringify(TKb))
         localStorage.setItem("indexTKb", JSON.stringify(idxLast))
-        window.location = "http://127.0.0.1:5500/html/index.html"
+        window.location = "https://finalexam-blog-phong.vercel.app/"
         reset()
     }
 }
