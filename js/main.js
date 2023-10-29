@@ -163,7 +163,7 @@ function hienThiBV() {
                     let blt = document.createElement("a")
                     blt.classList.add("blogT")
                     // blt.href = `http://127.0.0.1:5500/html/detail.html?_idBV=${baiviet[i].idbv}`
-                    blt.href = `web_url/html/detail.html?_idBV=${baiviet[i].idbv}`
+                    blt.href = `/html/detail.html?_idBV=${baiviet[i].idbv}`
 
                     let img = document.createElement("img")
                     img.classList.add("img")
@@ -199,7 +199,7 @@ function hienThiBV() {
                 } else if (baiviet[i].status === 3) {//x
                     let blog = document.createElement("a")
                     blog.classList.add("blog")
-                    blog.href = `web_url/html/detail.html?_idBV=${baiviet[i].idbv}`
+                    blog.href = `/html/detail.html?_idBV=${baiviet[i].idbv}`
                     // blog.href = `http://127.0.0.1:5500/html/detail.html?_idBV=${baiviet[i].idbv}`
                     let img = document.createElement("img")
                     img.classList.add("img")
@@ -250,7 +250,7 @@ function hienthiBaiVietChinh() {
         if (baiviet[i].status === 1 && baiviet[i].hot === true) {
             let a = document.createElement("a")
             // a.href = `http://127.0.0.1:5500/html/detail.html?_idBV=${baiviet[i].idbv}`
-            a.href = `web_url/html/detail.html?_idBV=${baiviet[i].idbv}`
+            a.href = `/html/detail.html?_idBV=${baiviet[i].idbv}`
 
             let img = document.createElement("img")
             img.classList.add("img")
@@ -302,13 +302,13 @@ function baiVietChiTiet(baiViet) {
 let indexTKb = JSON.parse(localStorage.getItem("indexTKb"))
 let blogLogin = JSON.parse(localStorage.getItem("blogLogin"))
 if (indexTKb === -1 || blogLogin === false) {
-    window.location = "web_url/html/login.html"
+    window.location = "/html/login.html"
 }
 function dangXuat() {
     localStorage.setItem("indexTKb", JSON.stringify(-1))
     localStorage.setItem("blogLogin", JSON.stringify(false))
     // window.location = "http://127.0.0.1:5500/html/login.html"
-    window.location = "web_url/html/login.html"
+    window.location = "/html/login.html"
 }
 //---------------------------------//Dang xuat//--------------------------------------------//
 

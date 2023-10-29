@@ -15,7 +15,7 @@ function hienThiBVthong() {
             let blt = document.createElement("a")
             blt.classList.add("blogT")
             // blt.href = `http://127.0.0.1:5500/html/detail.html?_idBV=${baiViet[i].idbv}`
-            blt.href = `web_url/html?_idBV=${baiViet[i].idbv}`
+            blt.href = `detail.html?_idBV=${baiViet[i].idbv}`
             let img = document.createElement("img")
             img.classList.add("img")
             const _src = fileURLs.find(x => x.id === baiViet[i].idbv)
@@ -75,7 +75,7 @@ function hienThiBVthong1(arr) {
         for (let i = 0; i < arr.length; i++) {
             let blt = document.createElement("a")
             blt.classList.add("blogT")
-            blt.href = `web_url/html/detail.html?_idBV=${arr[i].idBV}`
+            blt.href = `/detail.html?_idBV=${arr[i].idBV}`
 
             let img = document.createElement("img")
             img.classList.add("img")
